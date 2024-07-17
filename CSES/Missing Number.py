@@ -1,19 +1,40 @@
-def find_missing_number(n, numbers):
-    # Calculate the expected sum of numbers from 1 to n
-    expected_sum = n * (n + 1) // 2
-    
-    # Calculate the actual sum of the provided numbers
-    actual_sum = sum(numbers)
-    
-    # The missing number is the difference between the expected sum and the actual sum
-    return expected_sum - actual_sum
-
-# Example usage
-if __name__ == "__main__":
-    # Read the input
-    n = int(input("Enter the value of n: "))
-    numbers = list(map(int, input(f"Enter {n-1} numbers: ").split()))
-
-    # Find and print the missing number
-    missing_number = find_missing_number(n, numbers)
-    print("The missing number is:", missing_number)
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

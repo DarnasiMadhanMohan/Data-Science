@@ -1,39 +1,40 @@
-#You are given a DNA sequence: a string consisting of characters A, C, G, and T. Your task is to find the longest repetition in the sequence. This is a maximum-length substring containing only one type of character.
-#The only input line contains a string of n characters.
-#Output
-#Print one integer: the length of the longest repetition.
-#Constraints
-
-#1 \le n \le 10^6
-
-#Example
-#Input:
-#ATTCGGGA
-
-def longest_repetition(s):
-    max_len = 1
-    current_len = 1
-    
-    for i in range(1, len(s)):
-        if s[i] == s[i - 1]:
-            current_len += 1
-        else:
-            if current_len > max_len:
-                max_len = current_len
-            current_len = 1
-    
-    # Final check at the end of the string
-    if current_len > max_len:
-        max_len = current_len
-    
-    return max_len
-
-# Read the input string
-s = input()
-
-# Find and print the length of the longest repetition
-print(longest_repetition(s))
-
-
-#Output:
-#3
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
