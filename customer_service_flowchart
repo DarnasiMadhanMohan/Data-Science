@@ -1,0 +1,39 @@
+digraph {
+	A [label=Start shape=oval]
+	B [label="Answer phone" shape=rect]
+	C [label="How can we help?" shape=diamond]
+	D [label="Product info, or help placing order" shape=rect]
+	E [label="Take name and company" shape=rect]
+	F [label="Transfer to sales (ext.2209)" shape=rect]
+	G [label=Finish shape=oval]
+	H [label=Shipping shape=rect]
+	I [label="Your Text Here" shape=rect]
+	J [label="Problems with product?" shape=diamond]
+	K [label="Your Text Here" shape=rect]
+	L [label="Transfer to help desk (ext.2219)" shape=rect]
+	M [label=Finish shape=oval]
+	N [label=Other shape=rect]
+	O [label="Your Text Here" shape=rect]
+	P [label="Customer Service" shape=rect]
+	Q [label="Your Text Here" shape=rect]
+	R [label=Billing shape=rect]
+	S [label="Your Text Here" shape=rect]
+	A -> B
+	B -> C
+	C -> D [label="Product info, or help placing order"]
+	D -> E
+	E -> F
+	F -> G
+	C -> H [label=Shipping]
+	H -> I
+	C -> J [label="Problems with product?"]
+	J -> K
+	K -> L
+	L -> M
+	C -> N [label=Other]
+	N -> O
+	C -> P [label="Customer Service"]
+	P -> Q
+	C -> R [label=Billing]
+	R -> S
+}
